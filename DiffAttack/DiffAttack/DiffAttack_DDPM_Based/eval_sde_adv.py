@@ -20,7 +20,7 @@ from runners.diffattack_ddpm_cifar import Diffusion_cifar
 import torchvision.transforms as T
 from tqdm import tqdm
 
-#
+#创建模型类
 class SDE_Adv_Model(nn.Module):
     def __init__(self, args, config):
         super().__init__()
