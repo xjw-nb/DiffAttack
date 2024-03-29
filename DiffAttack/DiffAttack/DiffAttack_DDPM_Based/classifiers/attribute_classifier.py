@@ -11,15 +11,17 @@ from . import attribute_net
 
 softmax = torch.nn.Softmax(dim=1)
 
-
+#对于图像进行下采样操作，减小图像分辨率以节省资源
 def downsample(images, size=256):
     # Downsample to 256x256. The attribute classifiers were built for 256x256.
     # follows https://github.com/NVlabs/stylegan/blob/master/metrics/linear_separability.py#L127
     if images.shape[2] > size:
-        factor = images.shape[2] // size
-        assert (factor * size == images.shape[2])
+        factor = images.shape[2] // size #计算缩放的比例因子
+        assert (factor * size == images.shape[2])#赋值缩放后的图像，确保图像尺寸为整数
+        #images.view()常用来改变张量的形状，-1表示当前维度的大小根据其他维度大小自动计算
         images = images.view(
             [-1, images.shape[1], images.shape[2] // factor, factor, images.shape[3] // factor, factor])
+        #沿着3，5两个维度进行均值计算
         images = images.mean(dim=[3, 5])
         return images
     else:

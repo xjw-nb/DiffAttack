@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.8.10 (sftp://root@connect.westc.gpuhub.com:30457/root/.virtualenvs/DiffAttack-main/bin/python)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.10.13 (sftp://ubuntu@192.168.2.103:60007/home/ubuntu/anaconda3/envs/pytorch_py10/bin/python3.10)" project-jdk-type="Python SDK" />
 </project>

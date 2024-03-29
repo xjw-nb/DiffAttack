@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="ubuntu@192.168.2.103:60007 password" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="root@connect.westc.gpuhub.com:30457 password">
         <serverdata>
@@ -12,7 +12,7 @@
       <paths name="ubuntu@192.168.2.103:60007 password">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/DiffAttack" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
